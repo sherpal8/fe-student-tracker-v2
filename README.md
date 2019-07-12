@@ -1,6 +1,6 @@
 # Developer Pathway Student Tracker
 
-## Learning outcomes
+## Learning Outcomes
 
 - The importance of 'Thinking in React' when developing with React
 - Clear understanding of 'where state should sit' and how we decide
@@ -8,13 +8,21 @@
 - Extracting business logic (and making sure it's well tested)
 - Consolidate your understanding of the fundamentals of React
 
-## The problem
+## Getting Started
+
+Use [create-react-app](https://facebook.github.io/create-react-app/docs/getting-started) to begin your project:
+
+```bash
+npx create-react-app <project-name>
+```
+
+## The Problem
 
 - Since launching Developer Pathway, Northcoders has identified a need to better track students' journeys through the course.
 - In particular, every two weeks, during 'block review' - students are either graduated from a block if their understanding of the block's learning outcomes is sufficient, or they are asked to resit it.
 - New students also join the course (on block 1) on the day of a block review.
 
-## The desired solution
+## The Desired Solution
 
 Northcoders has hired you and your pair as contractors to deliver a prototype for a 'student tracker'. At this stage, we have a database of student details and a rudimentary API. This API has endpoints to serve up the data and allow developers to edit or add new information. You need to create a user friendly interface so that coders and non-coders can view and edit students' information.
 
@@ -35,7 +43,7 @@ Northcoders' team have given you a list of user stories for the application:
 - As an admin, I want to be able to remove people from the course so that we can account for the occasional leaver.
 - As an admin, I want to see how many pathways through the course there have been so that we can communicate that to relevant stakeholders.
 
-## Getting the data
+## Getting The Data
 
 - We are obviously going to need some data in order to build the user interface for the student-tracker. Our react application can then make API requests and display the information on the page. For this purpose, we have built several API end-points for you to retrieve data about the students, block and cohorts at northcoders.
 
@@ -91,7 +99,7 @@ The endpoints serve up the following:
 ```
 
 The `blockHistory` is an array representing a student's completion of blocks. Each item represents a block.
-I.e. The student above will have sat core twice and will currently be on back-end-1.  
+I.e. The student above will have sat core twice and will currently be on back-end-1.
 
 ### **PATCH** `/api/students/:id?progress={true/false}`
 
