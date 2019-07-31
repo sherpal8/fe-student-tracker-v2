@@ -59,7 +59,7 @@ The endpoints serve up the following:
   "_id": "5bbf0b168902695948a9ec74",
   "name": "Lamar Quigley",
   "startingCohort": 3,
-  "currentBlock": "front-end-2"
+  "currentBlock": "fe"
 }
 ```
 
@@ -77,20 +77,20 @@ The endpoints serve up the following:
       {
         "_id": "5bd0755a064fe4246d4975b2",
         "number": 1,
-        "name": "Core",
-        "slug": "core"
+        "name": "Fundamentals",
+        "slug": "fun"
       },
       {
         "_id": "5bd0755a064fe4246d4975b2",
         "number": 1,
-        "name": "Core",
-        "slug": "core"
+        "name": "Fundamentals",
+        "slug": "fun"
       },
       {
         "_id": "5bd0755a064fe4246d4975b3",
         "number": 2,
-        "name": "Back End 1",
-        "slug": "back-end-1"
+        "name": "Back End",
+        "slug": "be"
       }
     ],
     "__v": 0
@@ -126,8 +126,8 @@ I.e. The student above will have sat core twice and will currently be on back-en
         {
             "_id": "5bf69a8e4e52992859f5f758",
             "number": 1,
-            "name": "Core",
-            "slug": "core",
+            "name": "Fundamentals",
+            "slug": "fun",
             "__v": 0
         },
      ... ]
