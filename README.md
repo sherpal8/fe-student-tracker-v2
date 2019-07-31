@@ -19,7 +19,7 @@ npx create-react-app <project-name>
 ## The Problem
 
 - Since launching Developer Pathway, Northcoders has identified a need to better track students' journeys through the course.
-- In particular, every two weeks, during 'block review' - students are either graduated from a block if their understanding of the block's learning outcomes is sufficient, or they are asked to resit it.
+- In particular, every three weeks, during 'block review' - students are either graduated from a block if their understanding of the block's learning outcomes is sufficient, or they are asked to resit it.
 - New students also join the course (on block 1) on the day of a block review.
 
 ## The Desired Solution
