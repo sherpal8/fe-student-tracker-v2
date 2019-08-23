@@ -50,9 +50,17 @@ Northcoders' team have given you a list of user stories for the application:
 You can find the API [here](https://nc-student-tracker.herokuapp.com)
 The endpoints serve up the following:
 
-### **GET** `/api/students`
+### **GET** `/api/students?graduated=[true/false]&block=[block_slug]&cohort=[startingCohort]&sort_by=[name/startingCohort/currentBlock]&order=[asc/desc]`
 
-- This serves up an array of students in the form
+- This serves up an array of students in the below format.
+
+- There are also optional queries to:
+
+  - get students depending on whether they have graduated or not.
+  - get students from a specific block
+  - get students from a specific cohort
+  - sort_by a field
+  - order ascending or descending
 
 ```json
 {
@@ -133,14 +141,6 @@ I.e. The student above will have sat core twice and will currently be on back-en
      ... ]
 }
 ```
-
-### **GET** `/api/blocks/:block_slug/students`
-
-- This will get an array of all the students in a particular block. Displaying students in the same format as **GET** `/api/students`
-
-### **GET** `/api/cohorts/:cohort_number/students`
-
-- This will get an array of all the students who started on a particular cohort. Displaying students in the same format as **GET** `/api/students`
 
 ### **DELETE** `/api/students/:id`
 
